@@ -47,7 +47,6 @@ const usersPost = async(req, res = response) => {
     await usuario.save();
 
     res.json({
-        msg: "post API - controlador",
         usuario
     });
 }
@@ -59,11 +58,10 @@ const usersDelete = async(req, res = response) => {
     //Fisicamente lo borramos
     /* const usuario = await Usuario.findByIdAndDelete(id); */
 
-    const usuario = await Usuario.findByIdAndUpdate(id, { estado: false });
+    const ususario = await Usuario.findByIdAndUpdate(id, { estado: false });
 
-    res.json({
-        usuario
-    });
+
+    res.json({ ususario });
 }
 
 
