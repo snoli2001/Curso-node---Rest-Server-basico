@@ -46,7 +46,7 @@ const buscarCategorias = async(termino = '', res = response) => {
 
     const regex = new RegExp(termino, 'i');
 
-    const categortias = await Catgoria.find({
+    const categortias = await Categoria.find({
         nombre: regex,
         estado: true
     });
