@@ -1,5 +1,5 @@
 const { response } = require("express");
-const { Producto, Categoria } = require("../models");
+const { Producto, Categoria } = require("../models/index");
 
 
 // obtener categorias - paginado - total -populate
